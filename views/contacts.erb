@@ -1,13 +1,19 @@
 <h1>Contacts List</h1>
 
+<div class="counter">
+  There are <b><%= @contacts.length %></b> contacts
+</div>
+
 <ul>
   <% @contacts.each do |contact|%>
-  <li><%= contact.full_name</li>
-  <li><%= contact.email %></li>
-  <li><%= contact.note %></li>
-  <hr>
+  <li>
+    <b><%= contact.full_name %></b> [ <a href="mailto:<%= contact.email %>"><%= contact.email %></a> ]
+    <br>
+    <%= contact.note %>
+    <br>
+    <small><a href="#">Edit</a> | <a href="#">Delete</a></small>
+  </li>
   <% end %>
 </ul>
 
 <a href="/">back home</a>
-git

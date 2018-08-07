@@ -5,6 +5,10 @@ get '/' do
   erb :index
 end
 
+get '/home' do
+  erb :home
+end
+
 get '/contacts' do
   @contacts = Contact.all
   erb :contacts

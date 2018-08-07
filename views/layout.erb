@@ -2,9 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bitmaker CRM</title>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <div class="main_banner">
+        <h1>Bitmaker CRM</h1>
+      </div>
+      <nav class="top-nav">
+      <a href="/">Home</a>
+      <a href="/contacts">Contacts</a>
+      <a href="/#">Add Contact</a>
+      <a href="/about">About</a>
+      </nav>
+    </header>
+
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      &copy: Bitmaker 2018
+    </footer>
+
   </body>
 </html>
