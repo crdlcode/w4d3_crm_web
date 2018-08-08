@@ -1,16 +1,16 @@
 *
 box-sizing: border-box;
+text-decoration: none;
 
-h1 {
-  color: blue;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.main_banner h1{
-  text-align: center;
-  color: white;
-}
+/* Header top nav bar area */
 
 header {
+  text-align: center;
   background-color: black;
   width: 100%;
   padding: 12px;
@@ -19,12 +19,35 @@ header {
   top: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.top-nav li {
+  font-size: 1.4em;
+  background-color: #D2D2D2;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 2px;
+  display: block;
+  padding: 10px;
+}
+
+.top-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
 
 
 a {
   color: turquoise;
   text-decoration: none;
 }
+
+/* footer bottom area */
 
 footer {
   width: 100%;
